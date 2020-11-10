@@ -1,7 +1,7 @@
-<form action="<?php echo site_url('Pages/process');?>" method='post' name='process' enctype="multipart/form-data">
+<form action="<?php echo site_url('news/news_temp');?>" method='post' name='process' enctype="multipart/form-data">
   <h1> Log in</h1>
   <div class="inset">
-    <?php if (! is_null($msg)) echo $msg ;  ?>
+    
   <p>
     <label for="email">EMAIL ADDRESS</label>
     <input type="text" name="email" id="email" required="">
