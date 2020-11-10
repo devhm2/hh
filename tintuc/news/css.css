@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+.fixed{
+	position:fixed;
+	top:0px;
+	width:100%;
+	margin:0 auto;
+	left:0;
+
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.clear{
+	clear:both;
+}
+a:visited{
+	color:#C60;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+.wrapper{
+	width:95%;
+	height:auto;
+	margin:auto;
+/* 	border:1px solid #B4B4B4; */
+}
+.header{
+	width:100%;
+	
+}
+/*Ket thuc header*/
+.menu{
+	width:100%;
+	/*height:30px;*/
+	//
+;
+	/*background: #5c612f;*/
+	background: #f9f9f7;
+}
+.menu ul{
+	list-style:none;
+	width:100%;
+	height:40px;
+	margin:auto;
+}
+.menu li{
+	width: 80px;
+	height:40px;
+	float:left;
+	line-height: 35px;
+	margin-right: 20px;
+	text-align:center;
+	margin-left: 10px;
+	padding-right: -1%;
+}
+.menu li a{
+	display:block;
+	color: #171616;
+	font-weight: bolder;
+}
+.menu li:hover{
+	background:#9C0;
+}
+/*Ket thuc menu*/
+.content{
+	width:100%;
+	height:auto;
+	margin-top:40px;
+
+}
+.content_left{
+	width: 78%;
+	height:auto;
+	float: right;
+	margin-right: 22px;
+}
+.row{
+	//padding-left:10px;
+	//padding-right:300px;
+        padding-left:315px;
+	padding-right:2px;
+}
+.box1{
+	width:60%;
+	height:auto;
+	float:left;
+}
+.box1 img{
+	margin:5px 0 0px 15px;
+}
+.tieude{
+	color:#000;
+	margin:5px 0 0 20px;
+	font-size:18px;
+	font-weight:bold;
+}
+.tomtat{
+	color:#000;
+	margin:5px 0 0 20px;
+	
+}
+.box2{
+	width: 30%;
+	height:300px;
+	float:right;
+}
+.widthloaitin{
+	width: 95%;
+	height:auto;
+	float: right;
+	/* margin-right: 40px; */
+}
+
+.margin img{
+	padding-bottom:10px;
+
+	
+}
+
+h2.fon33.mt1.sapo {
+    margin-top: -8px !important;
+}
+
+img {
+    margin: 0 5px 10px 0;
+}
+
+.box2 li{
+	width:100%;
+	height:30px;
+	margin-top:10px;
+}
+.box2 a:hover{
+	text-decoration:underline;
+}
+.boxtin{
+	width:50%;
+	height: 25px;
+	background: #e1eae1;
+	margin-bottom:5px;
+	margin-left:15px;
+}
+.boxtin p{
+	text-align: center;
+	line-height:20px;
+	color: #323133;
+	font-weight: bold;
+}
+.content_right{
+	/* margin-left: 64px; */
+	width: 20%;
+	height:auto;
+	float:left;
+	/* border:1px solid #999; */
+	/* margin: 5px; */
+	/* padding-left: 10px; */
+}
+.content_right img{
+	margin-bottom:5px;
+}
+
+/*Ket thuc content*/
+.footer{
+	width:100%;
+	height:30px;
+	/* border:1px solid #000; */
+	background: #bcc3d8;//#060;
+}
+/*Ket thuc footer*/
