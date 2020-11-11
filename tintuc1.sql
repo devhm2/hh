@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2020 at 09:39 AM
+-- Generation Time: Nov 11, 2020 at 08:19 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.22
 
@@ -61,6 +61,51 @@ INSERT INTO `news_baiviet` (`idbaiviet`, `anhminhhoa`, `tenbaiviet`, `tomtat`, `
 (75, 'uploads/silicon.jpg', '<b>Thỏi Silicon và các bộ phận </b>', '<p style=\"color: rgb(78, 78, 78); font-family: \'Times New Roman\', Times, serif; font-size: 15.6px; font-style: italic;\">Được thành lập vào tháng 1 năm 2007 , HANA Materials , một công ty con của HANA Micron , là công ty hàng đầu thế giới chuyên sản xuất cực âm và vòng silicon là thiết bị sản xuất bán dẫn cốt lõi và các thành phần quan trọng nhất trong quá trình khắc khô  </p>', '<p>\r\n	Được thành lập vào tháng 1 năm 2007 , HANA Materials , một công ty con của HANA Micron , là công ty hàng đầu thế giới chuyên sản xuất cực âm và vòng silicon là thiết bị sản xuất bán dẫn cốt lõi và các thành phần quan trọng nhất trong quá trình khắc khô  .\r\n</p>\r\n<br>\r\n<p>\r\n	HANA Silicon đã sẵn sàng sản xuấ các tấm wafer 500mm sau khi phát triển thành công sản phẩm có kích thước lớn nhất thế giới , đây là sản phẩm quan trọng nhất, quan trọng nhất trong lĩnh vực kinh doanh chất bán dẫn . HANA silicon đảm bảo vị thế của mình trong ngành công nghiệp silicon bằng cách sử dụng công nghệ hàng đầu thế giới để sản xuất phôi silicon. Một thành phần thiết yếu trong ngành công nghiệp bán dẫn và năng lượng mặt trời.\r\n</p>', 16, 'hiển thị ', 3),
 (76, 'uploads/pt.jpg', '<b>Quản lý bền vững </b>', '<p style=\"color: rgb(78, 78, 78); font-family: \'Times New Roman\', Times, serif; font-size: 15.6px; font-style: italic;\">Về tính bền vững, HANA Micron tin tưởng vào việc duy trì và phát triển hơn nữa trách nhiệm đối với môi trường, xã hội và đạo đức trong mọi hoạt động kinh doanh để trở thành công ty dẫn đầu toàn cầu. </p>', '<br>\r\n<b>Chúng tôi đi vì sự bền vững</b>\r\n<br>\r\n<b> Các bên liên quan của HANA Micron</b>\r\n<p>\r\n	Về tính bền vững , HANA Micron tin tưởng vào việc duy trì và phát triển hơn nữa trách nhiệm đối với môi trường, xã hội  và đạo đức trong mọi hoạt động kinh doanh để trở thành công ty dẫn đầu toàn cầu \r\n</p>\r\n<br>\r\n<p>\r\n	HANA Micron sẽ tập trung vào việc tăng năng suất và khả năng cạnh tranh của các sản phẩm chủ lực của chúng tôi bằng cách giảm thời gian phát triển và cải thiện doanh số bán hàng . Cam kết của HANA Micron đối với các sản phẩm chủ lực của mình được thể hiện bằng doanh số ổn định . HANA Micron cũng duy trì sự ổn định tài chính thông qua hệ thống nhân sự dựa trên hiệu quả hoạt động . Với sự ra đời của sơ đồ tổ chức , một nền văn hóa học tập đã được thiết lập trong nỗ lực nâng cao năng lực của nhân viên . Thông qua văn hóa học tập này, HANA Micron tiếp tục đóng góp vào sự phát triển của các hoạt động cộng đồng. \r\n</p>\r\n<br>\r\n<p>\r\n	Trong tương lai , HANA Micron sẽ tiếp tục phát huy vai trò của một công ty bằng cách đóng góp vào sự phát triển của xã hội loài người , đồng thời cam kết mang đến sự hài lòng cho tất cả cac cổ đông của chúng tôi \r\n</p>', 13, 'hiển thị ', 5);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news_loaitin`
+--
+
+CREATE TABLE `news_loaitin` (
+  `idloaitin` int(11) NOT NULL,
+  `tenloaitin` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `trangthai` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `thutu` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `news_loaitin`
+--
+
+INSERT INTO `news_loaitin` (`idloaitin`, `tenloaitin`, `trangthai`, `thutu`) VALUES
+(12, 'Nhân Sự ', 'Hiển thị', 7),
+(13, 'Phát Triển', 'Hiển thị', 8),
+(14, 'Việc Làm ', 'Hiển thị', 9),
+(15, 'Bảng Tin', 'Hiển thị', 10),
+(16, 'Sản Phẩm ', 'Hiển thị', 11),
+(17, 'Giới Thiệu ', 'Hiển thị', 12),
+(20, 'Liên Hệ ', 'hiển thị ', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `idlogin` int(11) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`idlogin`, `username`, `password`) VALUES
+(1, 'hoangmai@gmail.com', '123456789');
+
 --
 -- Indexes for dumped tables
 --
@@ -72,6 +117,18 @@ ALTER TABLE `news_baiviet`
   ADD PRIMARY KEY (`idbaiviet`);
 
 --
+-- Indexes for table `news_loaitin`
+--
+ALTER TABLE `news_loaitin`
+  ADD PRIMARY KEY (`idloaitin`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`idlogin`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -80,6 +137,18 @@ ALTER TABLE `news_baiviet`
 --
 ALTER TABLE `news_baiviet`
   MODIFY `idbaiviet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+
+--
+-- AUTO_INCREMENT for table `news_loaitin`
+--
+ALTER TABLE `news_loaitin`
+  MODIFY `idloaitin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `idlogin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
